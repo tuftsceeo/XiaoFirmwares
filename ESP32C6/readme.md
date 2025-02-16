@@ -1,5 +1,5 @@
 # On MAC
-1. Install **esptool **
+1. Install **esptool**
   ```
   pip install esptool
  ```
