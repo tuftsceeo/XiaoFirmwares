@@ -27,5 +27,5 @@ esptool.py -p /dev/tty.usbmodem101 -b 460800 --before default_reset --after hard
 5. Open Device Manager to find the port to which it is connected under PORTS—it will be something like COM4. If you have multiple COMs, try unplugging and replugging the device to identify the right port by elimination.
 6. Copy the command below and replace the COM with the right number and hit enter
    ```
-   esptool -p _COM_ -b 115200 --before default_reset --after hard_reset --chip esp32c3 --no-stub write_flash --flash_mode dio --flash_size 4MB --flash_freq 80m 0x0 bootloader\bootloader.bin 0x8000 partition_table\partition-table.bin 0x10000 micropython.bin
+   esptool -p _COM_ -b 115200 --before default_reset --after hard_reset --chip esp32c6 --no-stub write_flash --flash_mode dio --flash_size 4MB --flash_freq 80m 0x0 bootloader\bootloader.bin 0x8000 partition_table\partition-table.bin 0x10000 micropython.bin
    ```
